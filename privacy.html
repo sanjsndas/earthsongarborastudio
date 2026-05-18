@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Earthsong Arboria Studio Privacy Policy — learn how we protect your data, respect your digital footprint, and cultivate transparency with the same care as our soil.">
+  <title>Earthsong Arboria Studio | Privacy Policy — Rooted in Trust</title>
+  <!-- Preconnect & Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #FDF8EC;
+      font-family: 'Inter', sans-serif;
+      color: #2C2B26;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --brown-deep: #5E3A1C;
+      --brown-mid: #8B5A2B;
+      --brown-light: #C49A6C;
+      --green-forest: #1F4F2B;
+      --green-sage: #5F7A4B;
+      --green-moss: #7E9A6B;
+      --cream: #F9F1E0;
+      --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);
+    }
+
+    h1, h2, h3, .logo, .nav-links a {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* header & nav */
+    header {
+      background: #2C3A1F;
+      border-bottom: 4px solid var(--brown-deep);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #EFE3C9;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: var(--brown-light);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #F1E9D8;
+      font-weight: 500;
+      transition: 0.2s;
+      font-size: 1.05rem;
+    }
+    .nav-links a:hover {
+      color: var(--brown-light);
+    }
+
+    /* page hero - privacy specific */
+    .legal-hero {
+      background: linear-gradient(110deg, #2A3E25 0%, #3B5C33 100%);
+      padding: 2.5rem 0 2rem;
+      color: #FFF4E4;
+      text-align: center;
+    }
+    .legal-hero h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 0.5rem;
+    }
+    .legal-hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .last-updated {
+      background: rgba(0,0,0,0.2);
+      display: inline-block;
+      padding: 0.2rem 1rem;
+      border-radius: 60px;
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      backdrop-filter: blur(2px);
+    }
+
+    /* main privacy content */
+    .privacy-card {
+      background: #FFFCF5;
+      border-radius: 40px;
+      margin: 2.5rem 0 3rem;
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(139,90,43,0.2);
+    }
+    .privacy-section {
+      margin-bottom: 2.5rem;
+    }
+    .privacy-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      color: var(--green-forest);
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--brown-mid);
+      padding-left: 1rem;
+    }
+    .privacy-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--brown-deep);
+      margin: 1.2rem 0 0.6rem;
+    }
+    .privacy-section p, .privacy-section li {
+      line-height: 1.6;
+      color: #3E3A34;
+      margin-bottom: 0.8rem;
+    }
+    .privacy-section ul, .privacy-section ol {
+      margin-left: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .privacy-section a {
+      color: var(--green-forest);
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .privacy-section a:hover {
+      color: var(--brown-deep);
+    }
+    .inset-note {
+      background: #F2EAD9;
+      padding: 1.2rem;
+      border-radius: 28px;
+      margin: 1.5rem 0;
+      border-left: 6px solid var(--brown-mid);
+      font-style: italic;
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: #FEF8EF;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .data-table th, .data-table td {
+      border: 1px solid #E3D5BF;
+      padding: 0.8rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    .data-table th {
+      background: #EADBBF;
+      color: #2C2B26;
+      font-weight: 600;
+    }
+    @media (max-width: 760px) {
+      .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .container {
+        padding: 0 1.2rem;
+      }
+      .legal-hero h1 {
+        font-size: 2rem;
+      }
+      .privacy-card {
+        padding: 1.5rem;
+      }
+      .data-table th, .data-table td {
+        padding: 0.5rem;
+      }
+    }
+    footer {
+      background: #25221C;
+      color: #D9CDB0;
+      padding: 2.5rem 0;
+      margin-top: 1rem;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: baseline;
+    }
+    .footer-col p, .footer-col address {
+      line-height: 1.6;
+      font-style: normal;
+    }
+    .footer-col a {
+      color: #C9B27C;
+      text-decoration: none;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      border-top: 1px solid #3E3A33;
+      padding-top: 1.5rem;
+    }
+    .btn-back {
+      display: inline-block;
+      background: var(--green-sage);
+      color: white;
+      padding: 0.6rem 1.4rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      transition: 0.2s;
+    }
+    .btn-back:hover {
+      background: var(--brown-deep);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="logo">Earthsong <span>Arboria Studio</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="legal-hero">
+    <div class="container">
+      <h1>Privacy Policy & Soil Stewardship of Data</h1>
+      <p>Your personal information is like a seed — we handle it with respect, transparency, and never without your consent.</p>
+      <div class="last-updated">🌿 Last updated: May 16, 2026 | Version 2.1 — Rooted in Regeneration</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="privacy-card">
+      <!-- introduction -->
+      <div class="privacy-section">
+        <p style="font-size: 1.1rem;"><strong>At Earthsong Arboria Studio</strong>, we believe that privacy is a form of ecological care. Just as we nurture the mycelial networks beneath our feet, we protect the trust you place in us. This policy explains what information we gather, why we gather it, and how you can remain in control. We never sell your data — ever. Think of this as our pledge to a digital ecosystem that honors the sacredness of connection.</p>
+      </div>
+
+      <!-- section 1: info we collect -->
+      <div class="privacy-section">
+        <h2>🌱 1. What information we gather</h2>
+        <p>When you interact with Earthsong Arboria Studio — whether through our contact form, nursery newsletter, workshop registration, or just browsing our valley-inspired pages — we may collect the following categories of personal data:</p>
+        <table class="data-table">
+          <thead>
+            <tr><th>Category</th><th>Examples</th><th>Purpose (the ‘why’)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>📋 Identity & Contact</td><td>Name, email address, phone number, physical address (if given)</td><td>To respond to inquiries, send seasonal notes, confirm nursery visits or consultations</td></tr>
+            <tr><td>🌿 Project / Garden Details</td><td>Message content, soil description, design interests, land size</td><td>To offer tailored regenerative advice, design estimates, and planting guidance</td></tr>
+            <tr><td>💻 Technical & Browsing</td><td>IP address (anonymized where possible), browser type, referral pages, site interactions</td><td>To improve website experience, understand which resources help our community most</td></tr>
+            <tr><td>🍂 Workshop & Events</td><td>Attendance records, dietary notes (for in-person events), emergency contact</td><td>To facilitate safe, joyful gatherings and maintain liability protocols</td></tr>
+          </tbody>
+        </table>
+        <div class="inset-note">
+          🌼 <strong>Our light touch:</strong> We do not collect sensitive personal data (e.g., health, political beliefs, precise geolocation) unless you explicitly provide it for event accommodations. We never ask for financial information via email — any payment for workshops or plants will be processed via a separate, secure portal (Stripe / Square).
+        </div>
+      </div>
+
+      <!-- section 2: how we use data -->
+      <div class="privacy-section">
+        <h2>🌾 2. How we use your information — rooted reciprocity</h2>
+        <p>We use your personal data for the following lawful and transparent purposes:</p>
+        <ul>
+          <li>✅ To answer your messages, design questions, and nursery requests — always by a real human gardener.</li>
+          <li>✅ To send you updates about workshops, plant sales, and the “Rhizosphere” newsletter, but only if you’ve opted in. You can unsubscribe instantly via any email.</li>
+          <li>✅ To improve our website and understand what content resonates (anonymous analytics using privacy-first tools like Fathom or local logs — no Google Analytics invasive tracking).</li>
+          <li>✅ To maintain essential records for legal, tax, or safety reasons (e.g., liability waivers for volunteer days).</li>
+        </ul>
+        <p><strong>We will never:</strong> sell, rent, or trade your personal data. We will never share your information with third-party advertisers. The only external sharing occurs if required by law (e.g., a valid court order) or if you explicitly ask us to connect you with a partner soil lab (with your written consent).</p>
+      </div>
+
+      <!-- section 3: cookies & tracking transparency -->
+      <div class="privacy-section">
+        <h2>🍪 3. Cookies & digital soil crumbs</h2>
+        <p>Our website uses minimal cookies — only essential ones to improve function and remember preferences (like dark mode or session stability). We do NOT use tracking cookies for advertising retargeting. You can adjust your cookie preferences anytime using our <a href="cookies.html">Cookies Policy page</a>. By using our website, you consent to the use of essential cookies, but you are always in control.</p>
+        <p>If you’d like to block all cookies, your browser settings allow you to do so; the site will still work, though some interactive features might be limited. For more details, see our dedicated Cookies Policy.</p>
+      </div>
+
+      <!-- section 4: data storage & security -->
+      <div class="privacy-section">
+        <h2>🔒 4. How we protect your data (like an old oak guards its roots)</h2>
+        <p>We take security seriously. All data submitted via our contact form is transmitted over HTTPS (SSL encrypted). Our backend stores information on secure, limited-access servers hosted with a trusted green-energy provider. Access to personal data is restricted to core team members (no more than 3 stewards) who are trained in confidentiality. We also:</p>
+        <ul>
+          <li>⚡ Perform regular software updates and vulnerability scans.</li>
+          <li>📬 Retain contact form entries for a maximum of 24 months, after which they are anonymized or deleted, unless you maintain an ongoing client relationship.</li>
+          <li>🌿 Never store credit card information; all payments are handled by third-party processors (Stripe or Square) who comply with PCI-DSS standards.</li>
+        </ul>
+        <div class="inset-note">
+          🛡️ <strong>Breach notification:</strong> In the unlikely event of a data breach that affects your privacy, we will notify affected individuals within 72 hours as required by applicable laws (GDPR / CCPA / Vermont data privacy act).
+        </div>
+      </div>
+
+      <!-- section 5: your rights and choices -->
+      <div class="privacy-section">
+        <h2>🌿 5. Your rights — You are the gardener of your data</h2>
+        <p>Depending on your location (including residents of the EU, UK, California, and Vermont), you may have the following rights regarding your personal information:</p>
+        <ul>
+          <li><strong>Right to access:</strong> Request a copy of the personal data we hold about you.</li>
+          <li><strong>Right to rectification:</strong> Correct inaccurate or incomplete data.</li>
+          <li><strong>Right to deletion (“right to be forgotten”):</strong> Ask us to delete your personal data, subject to legal obligations.</li>
+          <li><strong>Right to restriction:</strong> Limit how we use your data while we address your request.</li>
+          <li><strong>Right to data portability:</strong> Receive your data in a structured, machine-readable format.</li>
+          <li><strong>Right to object:</strong> Opt-out of certain processing (e.g., newsletter emails).</li>
+        </ul>
+        <p>To exercise any of these rights, please contact our Data Steward via <strong>privacy@earthsongarboria.com</strong> or by mail at the address below. We will respond within 30 days (often faster — our team is small and dedicated). We will never discriminate against you for exercising your rights.</p>
+      </div>
+
+      <!-- section 6: children's privacy -->
+      <div class="privacy-section">
+        <h2>🧒 6. Children's privacy (tender shoots)</h2>
+        <p>Our website and services are directed toward adults and families engaged in regenerative gardening. We do not knowingly collect personal information from children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal data, please contact us and we will promptly delete it. For any youth workshop registrations, we always require parental consent and will only collect minimal data needed for safety.</p>
+      </div>
+
+      <!-- section 7: third-party links -->
+      <div class="privacy-section">
+        <h2>🔗 7. External links & resources</h2>
+        <p>Our content may include links to partner organizations, seed libraries, or permaculture resources. Once you leave earhsongarboria.com, this privacy policy no longer applies. We are not responsible for the privacy practices of external sites, and we encourage you to read their policies. We only link to organizations that share our values — but vigilance is always wise, like checking your soil pH.</p>
+      </div>
+
+      <!-- section 8: international transfers -->
+      <div class="privacy-section">
+        <h2>🌍 8. International data transfers</h2>
+        <p>Our studio and servers are located in the United States (Vermont). If you are accessing our website from outside the US, please be aware that your information may be transferred to and processed in the US. We rely on standard contractual clauses and ensure an adequate level of protection consistent with this policy. By using our site and submitting data, you consent to this transfer.</p>
+      </div>
+
+      <!-- section 9: changes to this policy -->
+      <div class="privacy-section">
+        <h2>🍂 9. Updates to our privacy roots</h2>
+        <p>We may revise this privacy policy from time to time to reflect changes in our practices, legal requirements, or technology. The “last updated” date at the top of this page indicates when changes were made. If we make material changes that affect your rights, we will notify you via email (if we have your address) or via a visible notice on our homepage. We encourage you to review this page periodically — transparency is a continuous practice, much like composting.</p>
+      </div>
+
+      <!-- section 10: contact our data steward -->
+      <div class="privacy-section">
+        <h2>✉️ 10. Speak with the Data Steward</h2>
+        <p>If you have any questions about this privacy policy, your data, or wish to file a complaint, please reach out — we actually enjoy these conversations.</p>
+        <div style="background: #F3ECDE; border-radius: 24px; padding: 1rem 1.5rem; margin-top: 1rem;">
+          <p><strong>📮 Earthsong Arboria Studio — Data Protection Steward</strong><br>
+          1257 Arbor Vitae Lane, Hawkmeadow Valley, VT 05774, United States<br>
+          Email: <a href="mailto:privacy@earthsongarboria.com">privacy@earthsongarboria.com</a><br>
+          Phone: <a href="tel:+18023189642">+1 (802) 318-9642</a> (ask for the privacy steward, available Wednesdays 1–3pm ET)</p>
+          <p>You also have the right to lodge a complaint with your local supervisory authority (e.g., the Vermont Attorney General’s office or, for EU residents, your national Data Protection Authority).</p>
+        </div>
+      </div>
+
+      <!-- final reassurance -->
+      <div class="inset-note" style="background:#E6DCCF; margin-top: 1rem;">
+        🌱 <strong>A note from our founder:</strong> “Privacy is not about secrecy — it’s about sovereignty. Just as every gardener decides which seeds to plant and where, you decide how you share your story with us. We honor that boundary deeply.” — Rowan Thistle, Head Steward & Soil Listener.
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="contact.html" class="btn-back">🌾 Return to Contact & Cultivation 🌾</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <h4 style="font-family: 'Playfair Display'; color: #D6C29D;">Earthsong Arboria Studio</h4>
+      <p style="margin-top: 0.75rem;">Where brown soil sings with green wings.</p>
+    </div>
+    <div class="footer-col">
+      <address>
+        <strong>📍 Studio & Nursery</strong><br>
+        1257 Arbor Vitae Lane,<br>
+        Hawkmeadow Valley, VT 05774<br>
+        United States
+      </address>
+    </div>
+    <div class="footer-col">
+      <p><strong>📞 Call & Cultivate</strong><br>
+      +1 (802) 318-9642<br>
+      <a href="mailto:hello@earthsongarboria.com">hello@earthsongarboria.com</a></p>
+    </div>
+  </div>
+  <div class="container copyright">
+    <p>© 2026 Earthsong Arboria Studio — Regenerative Gardens for the Seventh Generation. Your privacy is part of our ecological ethic.</p>
+  </div>
+</footer>
+</body>
+</html>

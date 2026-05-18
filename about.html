@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Earthsong Arboria Studio | About — Our Soil & Soul</title>
+  <!-- Preconnect & Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #FDF8EC;
+      font-family: 'Inter', sans-serif;
+      color: #2C2B26;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --brown-deep: #5E3A1C;
+      --brown-mid: #8B5A2B;
+      --brown-light: #C49A6C;
+      --green-forest: #1F4F2B;
+      --green-sage: #5F7A4B;
+      --green-moss: #7E9A6B;
+      --cream: #F9F1E0;
+      --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);
+    }
+
+    h1, h2, h3, .logo, .nav-links a {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* header & nav */
+    header {
+      background: #2C3A1F;
+      border-bottom: 4px solid var(--brown-deep);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #EFE3C9;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: var(--brown-light);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #F1E9D8;
+      font-weight: 500;
+      transition: 0.2s;
+      font-size: 1.05rem;
+    }
+    .nav-links a:hover {
+      color: var(--brown-light);
+    }
+
+    /* hero / banner */
+    .about-hero {
+      background: linear-gradient(135deg, #273f21 0%, #416b37 100%);
+      padding: 3rem 0 4rem 0;
+      color: #FFF4E4;
+    }
+    .about-hero-content {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .about-hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .about-hero p {
+      font-size: 1.25rem;
+      opacity: 0.92;
+    }
+
+    /* sections */
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid #E2DBCB;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--green-forest);
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 70px;
+      height: 3px;
+      background: var(--brown-mid);
+      border-radius: 4px;
+    }
+
+    .text-block {
+      margin: 1.2rem 0;
+      line-height: 1.7;
+      color: #3E3A34;
+      font-size: 1.05rem;
+    }
+
+    .row-2col {
+      display: flex;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+    .col {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .img-float {
+      border-radius: 32px;
+      width: 100%;
+      object-fit: cover;
+      box-shadow: var(--shadow-sm);
+      transition: 0.3s;
+      border: 1px solid rgba(139,90,43,0.2);
+      margin-bottom: 1rem;
+    }
+
+    .stats-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+      background: #F5EFE2;
+      border-radius: 48px;
+      padding: 2rem 2rem;
+      margin: 2rem 0;
+    }
+    .stat-item {
+      flex: 1;
+      text-align: center;
+      min-width: 140px;
+    }
+    .stat-number {
+      font-size: 2.7rem;
+      font-weight: 700;
+      color: var(--brown-deep);
+      font-family: 'Playfair Display', serif;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #5B4C3A;
+      font-weight: 500;
+    }
+
+    .team-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem 0;
+      justify-content: center;
+    }
+    .team-card {
+      background: #FFFCF5;
+      border-radius: 36px;
+      overflow: hidden;
+      flex: 1;
+      min-width: 220px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .team-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+    .team-card h4 {
+      margin: 1rem 0 0.3rem;
+      color: var(--green-forest);
+      font-size: 1.3rem;
+    }
+    .team-card p {
+      padding: 0 1rem 1rem;
+      font-size: 0.9rem;
+      color: #5E5546;
+    }
+
+    footer {
+      background: #25221C;
+      color: #D9CDB0;
+      padding: 2.5rem 0;
+      margin-top: 1rem;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: baseline;
+    }
+    .footer-col p, .footer-col address {
+      line-height: 1.6;
+      font-style: normal;
+    }
+    .footer-col a {
+      color: #C9B27C;
+      text-decoration: none;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      border-top: 1px solid #3E3A33;
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 760px) {
+      .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .about-hero h1 {
+        font-size: 2.1rem;
+      }
+      .container {
+        padding: 0 1.2rem;
+      }
+      .stat-number {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="logo">Earthsong <span>Arboria Studio</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <!-- about hero banner -->
+  <div class="about-hero">
+    <div class="container about-hero-content">
+      <h1>Rooted in Kinship,<br>Guided by the Wild</h1>
+      <p>We are artisans of living systems — where brown earth wisdom meets the green pulse of regeneration. This is our story, our land, our promise.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Philosophy & origin -->
+    <section id="origin">
+      <h2 class="section-title">The Genesis of Earthsong</h2>
+      <div class="row-2col">
+        <div class="col">
+          <img class="img-float" src="https://placehold.co/700x500/8B6742/FCF3E2?text=Founders+%26+Soil+Legacy" alt="Founders working in a lush food forest">
+        </div>
+        <div class="col">
+          <div class="text-block">
+            Founded in 2012 by master gardener <strong>Dr. Elara Thorne</strong> and agroecologist <strong>Marcel Voss</strong>, Earthsong Arboria Studio emerged from a decade of research into climate-resilient permaculture. What began as a half‑acre experimental plot on Hawkmeadow Valley has blossomed into a 47‑acre living laboratory and design studio. Our name honours the ancient belief that healthy soil emits a low-frequency hum — mycelial vibrations that connect every root and leaf. We started with a simple credo: <em>“Listen beneath the brown, celebrate the green, and design with succession, not control.”</em>
+          </div>
+          <div class="text-block">
+            Today, our studio stewards three main bioregional hubs: the Appalachian teaching forest, the Pacific fog prairie project, and the arid‑lands regenerative orchard in the Southwest. We’ve worked with over 340 private estates, public parks, and indigenous land‑back initiatives, always prioritising native ecologies and heirloom genetics. At our core, we are soil builders, habitat weavers, and storytellers of the photosynthetic world. Our approach merges hard data — soil carbon fractions, water infiltration rates — with intuitive design that feels timeless and enchanted.
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item"><div class="stat-number">47+</div><div class="stat-label">acres restored</div></div>
+        <div class="stat-item"><div class="stat-number">1,280</div><div class="stat-label">native species planted</div></div>
+        <div class="stat-item"><div class="stat-number">22k</div><div class="stat-label">tons carbon sequestered*</div></div>
+        <div class="stat-item"><div class="stat-number">12</div><div class="stat-label">biodynamic microclimates</div></div>
+      </div>
+      <div class="text-block">
+        <strong>Our mission transcends aesthetics:</strong> we aim to reverse topsoil depletion by demonstrating that ornamental gardens can also function as carbon sinks, pollinator refuges, and food sources. Every Earthsong design includes a minimum of 60% native keystone genera (oaks, willows, asters, goldenrods). And we never treat soil as mere dirt — we treat it as a living community. By integrating fungal networks, silvopasture, and rainwater harvesting, we’ve helped turn barren lawns into self‑regulating Edens. Our name has become synonymous with the “brown‑green revolution” — not a fleeting trend but a return to deep ecological literacy.
+      </div>
+    </section>
+
+    <!-- deep rooted philosophy: the studio's heart -->
+    <section id="philosophy-deep">
+      <h2 class="section-title">The Brown-Green Covenant</h2>
+      <div class="row-2col">
+        <div class="col">
+          <div class="text-block">
+            We see <span style="color:#5E3A1C; font-weight:600;">brown</span> not as lifeless dirt but as the pantry of eternity — decomposing leaves, woody debris, humus, and fungal highways. <span style="color:#2C6E2F; font-weight:600;">Green</span> is the breath of creation: chlorophyll converting sunlight into sugar, roots exuding carbon feeds, and canopies dancing with birds. Our studio’s central covenant: <strong>increase the brown to grow the green, and let the green return as brown</strong>. This circle of fertility is our foundational design principle.
+          </div>
+          <div class="text-block">
+            In practice, we apply this covenant through yearly “Soil Sabbath” rituals, where we refrain from tilling and instead sheet-mulch with cardboard, wood chips, and green hay. We monitor soil respiration, mycorrhizal colonization rates, and invertebrate biodiversity. This deep ecology has led to the discovery of rare orchid populations returning to our terraced woodlands after a decade of neglect. For us, brown is memory, green is hope — together they create a sanctuary that outlives any single generation.
+          </div>
+        </div>
+        <div class="col">
+          <img class="img-float" src="https://placehold.co/700x500/62843C/FFF8EC?text=Brown+Green+Symbiosis" alt="Close-up of rich dark soil with green sprout">
+        </div>
+      </div>
+      <div class="text-block">
+        Our team has also pioneered the “Earthy Palette Design System” — a framework that uses local geology and native plant assemblages to create resilient, low‑maintenance gardens. Each palette features a “brown anchor” (e.g., an ancient stone bench, a sculptural dead snag, a berm of ramial chips) and a “green heart” (a keystone shrub or canopy tree). From there, perennials and groundcovers weave the tapestry. The result: gardens that look like they have always belonged, welcoming both solitude and wild abundance.
+      </div>
+    </section>
+
+    <!-- the people behind earthsong -->
+    <section id="stewards">
+      <h2 class="section-title">The Stewards & Storytellers</h2>
+      <div class="text-block">Our team is a collective of ecologists, land artists, herbalists, and soil whisperers. Each brings a unique devotion to the brown‑green dance. Together we have taught over 200 workshops, from mycology basics to advanced swale construction.</div>
+      <div class="team-gallery">
+        <div class="team-card">
+          <img src="https://placehold.co/500x600/AB8D62/FDF3E8?text=Dr.+Elara+Thorne" alt="Elara Thorne portrait">
+          <h4>Dr. Elara Thorne</h4>
+          <p>Founder, Soil Ecologist — author of “Humus & Heartbeat”. PhD in Agroecology, 20+ years of regenerative design.</p>
+        </div>
+        <div class="team-card">
+          <img src="https://placehold.co/500x600/7B9A5C/FCF7EE?text=Marcel+Voss" alt="Marcel Voss portrait">
+          <h4>Marcel Voss</h4>
+          <p>Design Director & Horticulturist — master of edible forest gardens, natural building, and drystone terracing.</p>
+        </div>
+        <div class="team-card">
+          <img src="https://placehold.co/500x600/C9AE88/FDF6EA?text=Zinnia+Moon" alt="Zinnia Moon portrait">
+          <h4>Zinnia Moon</h4>
+          <p>Native Plant Specialist — rewilding coordinator, pollinator corridors, seed stewardship network.</p>
+        </div>
+        <div class="team-card">
+          <img src="https://placehold.co/500x600/5C7C49/FFF7ED?text=River+Stone" alt="River Stone portrait">
+          <h4>River Stone</h4>
+          <p>Water & Carbon Analyst — designs rainwater harvesting systems, biochar kilns, and regenerative grazing plans.</p>
+        </div>
+      </div>
+      <div class="text-block">
+        Beyond our core team, Earthsong collaborates with indigenous seed keepers, wildlife biologists, and mycology labs. We offer paid internships for BIPOC and aspiring land stewards, because true regeneration includes cultural healing. Our studio is a living proof that diverse perspectives lead to richer soil — both metaphorically and literally.
+      </div>
+    </section>
+
+    <!-- signature projects + extended narrative -->
+    <section id="legacy">
+      <h2 class="section-title">Landmarks of Regeneration</h2>
+      <div class="row-2col">
+        <div class="col">
+          <h3 style="color:#5E3A1C;">🌲 The Hawkmeadow Arboretum</h3>
+          <div class="text-block">Our flagship site, a former corn mono‑crop, transformed into a 20‑acre silvopasture and nut orchard. More than 180 varieties of chestnut, hickory, and oak now thrive here. Annual mushroom yields exceed 6,000 lbs, and soil organic matter rose from 1.2% to 6.8% in nine years.</div>
+          <h3 style="color:#5E3A1C;">🌊 Tidal Roots Project (Coastal Maine)</h3>
+          <div class="text-block">A collaboration with coastal land trusts to create salt‑tolerant food hedges using beach plum, bayberry, and sea kale. Brown wrack seaweed used as mulch builds salt‑marsh edge resilience while green dune grasses stabilise erosion.</div>
+        </div>
+        <div class="col">
+          <h3 style="color:#5E3A1C;">🏜️ Sonoran Edible Oasis</h3>
+          <div class="text-block">In the arid Southwest, we installed passive rainwater basins, shade structures, and a palette of native desert perennials — prickly pear, mesquite, and desert willow. The brown earth (caliche) was amended with biochar and local compost, increasing water retention by 300%.</div>
+          <h3 style="color:#5E3A1C;">🕯️ The Mycelial Memorial Garden</h3>
+          <div class="text-block">A contemplative space where visitors walk through log‑layered paths inoculated with oyster and reishi fungi. A living tribute to species lost to climate change, designed with brown remembrance and green resilience.</div>
+        </div>
+      </div>
+      <img class="img-float" src="https://placehold.co/1400x500/6B8E4E/FEF7EA?text=Panorama+Earthsong+Arboretum+Canopy" alt="Panoramic view of Earthsong food forest" style="margin: 1rem 0; border-radius: 36px;">
+      <div class="text-block">
+        These projects embody our commitment to open-source knowledge: we publish detailed construction guides, plant lists, and monitoring data on our digital library. To date, over 12,000 regenerative practitioners have adopted methods first prototyped at Earthsong. We also offer a mentorship program for aspiring ecological designers, bridging the gap between academic knowledge and hands‑on craft. The brown‑green legacy is not owned — it’s shared.
+      </div>
+    </section>
+
+    <!-- Earth ethics + extended mission statement (long unique text) -->
+    <section id="ethics" style="background: #FBF5E9; border-radius: 40px; margin: 2rem 0; padding: 2rem 2rem;">
+      <h2 class="section-title" style="margin-bottom: 1.5rem;">The Seventh Generation Promise</h2>
+      <div class="text-block">
+        Inspired by Indigenous Haudenosaunee philosophy, we evaluate every decision by its impact on the next seven generations. That means we refuse to use synthetic herbicides, neonics, or peat moss (which destroys ancient carbon sinks). Instead, we propagate plants in coir and compost, rely on integrated pest management with beneficial insects, and prioritise plant genetics that adapt to changing climates. Each landscape we design includes an “eternal soil” clause — a legally binding covenant that future owners must maintain the soil food web and never revert to chemical monoculture. As of 2026, all 47 Earthsong‑designed properties remain in full regenerative compliance.
+      </div>
+      <div class="row-2col">
+        <div class="col">
+          <div class="text-block">
+            <strong>📜 Land Back Initiatives:</strong> We’ve helped return 86 acres of previously cultivated land to indigenous stewardship, with our design team offering free ecological transition plans. We believe that healing the land is inseparable from justice and sovereignty.
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-block">
+            <strong>♻️ Closed‑Loop Nursery:</strong> Our on‑site nursery grows 40,000+ native and heirloom plants every year, using rainwater, solar‑powered fans, and biocontainers made from mushroom mycelium. Nothing goes to landfill.
+          </div>
+        </div>
+      </div>
+      <div class="text-block">
+        The Earthsong Arboria Studio is also a designated Monarch Waystation and a “Wildlife Friendly Certified” habitat. We host monthly forest bathing walks, carbon farming workshops, and free seed libraries. Visitors often remark that our gardens feel like a cathedral of calm — where the brown soil smells of damp earth after rain, and the green leaves whisper ancient patterns. This is our offer: a future where gardening is not a chore but a ceremony, and where every backyard can become a micro‑sanctuary.
+      </div>
+      <div class="text-block">
+        <strong>Our 2030 vision:</strong> to establish regional “Arboria Hubs” across four bioregions, training 1,000 new regenerative designers and stewarding 10,000 acres into vibrant brown‑green mosaics. Each hub will combine an edible nursery, a seed bank, and a mycology lab. We have already secured initial funding from the TerraGenesis Fund, and we invite you to be part of this living movement — whether by planting an oak, hosting a workshop, or simply letting a corner of your lawn go wild. The earth remembers; we only need to listen.
+      </div>
+    </section>
+
+    <!-- final call to join -->
+    <section style="border-bottom: none; padding-bottom: 2rem;">
+      <h2 class="section-title">Become a Root Holder</h2>
+      <div class="row-2col" style="align-items: center;">
+        <div class="col">
+          <div class="text-block">
+            Our “Root Holder” community gathers monthly for webinars, planting days, and citizen science projects. Members receive our quarterly “Humus & Canopy” journal, access to seed exchanges, and discounted design consultations. We’d love to welcome you into the Earthsong kinship. Together we will deepen the brown, amplify the green, and cultivate hope that tastes like sun‑warmed tomatoes and smells like fallen oak leaves.
+          </div>
+          <a href="contact.html" class="btn" style="background: #5E3A1C; margin-top: 1rem; display: inline-block;">Join the Grove →</a>
+        </div>
+        <div class="col">
+          <img class="img-float" src="https://placehold.co/600x400/AD8A62/FCF1E1?text=Root+Holder+Ceremony" alt="Community gathering in forest garden">
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer id="contact-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <h4 style="font-family: 'Playfair Display'; color: #D6C29D;">Earthsong Arboria Studio</h4>
+      <p style="margin-top: 0.75rem;">Where brown soil sings with green wings.</p>
+    </div>
+    <div class="footer-col">
+      <address>
+        <strong>📍 Studio & Nursery</strong><br>
+        1257 Arbor Vitae Lane,<br>
+        Hawkmeadow Valley, VT 05774<br>
+        United States
+      </address>
+    </div>
+    <div class="footer-col">
+      <p><strong>📞 Call & Cultivate</strong><br>
+      +1 (802) 318-9642<br>
+      <a href="mailto:hello@earthsongarboria.com">hello@earthsongarboria.com</a></p>
+    </div>
+  </div>
+  <div class="container copyright">
+    <p>© 2026 Earthsong Arboria Studio — Regenerative Gardens for the Seventh Generation. All images captured from our living collections. Brown & Green, forever.</p>
+  </div>
+</footer>
+</body>
+</html>
