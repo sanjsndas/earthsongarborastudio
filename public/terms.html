@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Earthsong Arboria Studio | Terms of Service — Rooted Agreements</title>
+  <!-- Preconnect & Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #FDF8EC;
+      font-family: 'Inter', sans-serif;
+      color: #2C2B26;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --brown-deep: #5E3A1C;
+      --brown-mid: #8B5A2B;
+      --brown-light: #C49A6C;
+      --green-forest: #1F4F2B;
+      --green-sage: #5F7A4B;
+      --green-moss: #7E9A6B;
+      --cream: #F9F1E0;
+      --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);
+    }
+
+    h1, h2, h3, .logo, .nav-links a {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* header & nav */
+    header {
+      background: #2C3A1F;
+      border-bottom: 4px solid var(--brown-deep);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #EFE3C9;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: var(--brown-light);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #F1E9D8;
+      font-weight: 500;
+      transition: 0.2s;
+      font-size: 1.05rem;
+    }
+    .nav-links a:hover {
+      color: var(--brown-light);
+    }
+
+    /* terms hero (softer, legal tone) */
+    .terms-hero {
+      background: linear-gradient(115deg, #2F3E24 0%, #4C6A3B 100%);
+      padding: 2.5rem 0 3rem 0;
+      color: #FFF4E4;
+    }
+    .terms-hero-content {
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    .terms-hero h1 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .terms-hero p {
+      font-size: 1.15rem;
+      opacity: 0.92;
+    }
+
+    /* sections */
+    section {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid #E2DBCB;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--green-forest);
+      margin-bottom: 1.2rem;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 2.5px;
+      background: var(--brown-mid);
+      border-radius: 4px;
+    }
+
+    .text-block {
+      margin: 1.2rem 0;
+      line-height: 1.7;
+      color: #3E3A34;
+      font-size: 1.02rem;
+    }
+    .legal-card {
+      background: #FFFCF7;
+      border-radius: 32px;
+      padding: 1.8rem 2rem;
+      margin: 1.8rem 0;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #EADDBD;
+    }
+    .legal-card h3 {
+      font-size: 1.5rem;
+      color: var(--brown-deep);
+      margin-bottom: 0.75rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .legal-list {
+      padding-left: 1.5rem;
+      margin: 1rem 0;
+    }
+    .legal-list li {
+      margin: 0.6rem 0;
+      line-height: 1.6;
+    }
+    .highlight {
+      background: #F1EADB;
+      padding: 0.1rem 0.3rem;
+      border-radius: 12px;
+      font-weight: 500;
+      color: #4C2F15;
+    }
+    footer {
+      background: #25221C;
+      color: #D9CDB0;
+      padding: 2.5rem 0;
+      margin-top: 2rem;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: baseline;
+    }
+    .footer-col p, .footer-col address {
+      line-height: 1.6;
+      font-style: normal;
+    }
+    .footer-col a {
+      color: #C9B27C;
+      text-decoration: none;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      border-top: 1px solid #3E3A33;
+      padding-top: 1.5rem;
+    }
+    .btn {
+      background: #5E3A1C;
+      padding: 0.7rem 1.5rem;
+      border-radius: 60px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+      display: inline-block;
+      border: none;
+    }
+    .btn:hover {
+      background: #7C5230;
+      transform: translateY(-2px);
+    }
+    @media (max-width: 760px) {
+      .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .terms-hero h1 {
+        font-size: 1.9rem;
+      }
+      .container {
+        padding: 0 1.2rem;
+      }
+      .legal-card {
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="logo">Earthsong <span>Arboria Studio</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html" style="color: #E6C99C;">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="terms-hero">
+    <div class="container terms-hero-content">
+      <h1>Terms of Service<br>— Rooted in Respect —</h1>
+      <p>Our legal framework is built on the same principles as our soil: transparency, longevity, and mutual care. Please read these terms before engaging with Earthsong Arboria Studio.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- introduction & acceptance -->
+    <section style="padding-top: 2.5rem;">
+      <h2 class="section-title">1. Acceptance of the Living Agreement</h2>
+      <div class="text-block">
+        By accessing the website <strong>earthsongarboria.com</strong> (including all subdomains, content, design services, workshops, or digital products), you acknowledge that you have read, understood, and agree to be bound by these Terms of Service (“Terms”). These Terms constitute a legally binding agreement between you (“User”, “Visitor”, “Client”, “Root Holder”) and Earthsong Arboria Studio (“Studio”, “we”, “us”, “our”). If you do not agree with any part of these Terms, you must not use our website or services.
+      </div>
+      <div class="text-block">
+        Our work is guided by regenerative ethics, and we expect the same level of integrity from our community. We reserve the right to modify these Terms at any time. Changes become effective immediately upon posting. Your continued use of our site or services after changes are posted constitutes acceptance of the updated Terms. The “Last Amended” date at the end of this page indicates the latest version.
+      </div>
+    </section>
+
+    <!-- services and use -->
+    <section>
+      <h2 class="section-title">2. Our Services & Ethical Scope</h2>
+      <div class="legal-card">
+        <h3>🌱 What Earthsong Offers</h3>
+        <div class="text-block">Earthsong Arboria Studio provides ecological landscape design consultations, regenerative garden installations, educational workshops, digital guides (e-books, webinars), native plant sales, and immersive land-stewardship experiences. All services are rooted in agroecology, permaculture, and climate-resilient practices.</div>
+        <ul class="legal-list">
+          <li><span class="highlight">Design Services:</span> Custom master plans, planting palettes, soil remediation strategies, and long-term management protocols.</li>
+          <li><span class="highlight">Workshops & Courses:</span> In-person and virtual training on topics like mycology, rainwater harvesting, carbon farming, and native landscaping.</li>
+          <li><span class="highlight">Nursery & Products:</span> Native trees, shrubs, perennials, seeds, compost amendments, and mycelial products. All plants are grown without synthetic chemicals or peat moss.</li>
+        </ul>
+        <div class="text-block">We reserve the right to refuse service to anyone promoting practices harmful to ecosystems (e.g., chemical-intensive landscaping, invasive species introduction) or engaging in abusive behavior toward our team or community.</div>
+      </div>
+    </section>
+
+    <!-- intellectual property & content -->
+    <section>
+      <h2 class="section-title">3. Intellectual Property — The Seed Sovereignty</h2>
+      <div class="row-2col" style="display: flex; gap: 2rem; flex-wrap: wrap;">
+        <div class="col" style="flex:1;">
+          <div class="text-block">All content on this website — including text, graphics, logos, photographs, instructional diagrams, video materials, and original design frameworks (e.g., “Earthy Palette Design System”, “Brown‑Green Covenant”) — is the exclusive property of Earthsong Arboria Studio unless otherwise credited. These assets are protected by international copyright, trademark, and other intellectual property laws.</div>
+          <div class="text-block">You may download or print a single copy of portions of the content for personal, non-commercial, educational use regarding regenerative gardening, provided you retain all copyright and proprietary notices. However, you may <strong>not</strong> reproduce, redistribute, republish, or commercially exploit any material without our prior written consent. For permissions, email <a href="mailto:hello@earthsongarboria.com">hello@earthsongarboria.com</a>.</div>
+        </div>
+        <div class="col" style="flex:1;">
+          <div class="legal-card" style="margin-top:0; background:#F9F4E9;">
+            <h3 style="font-size:1.3rem;">📖 Open-Source Ethos</h3>
+            <div class="text-block">While we fiercely protect our original works, we believe in the commons. Educational resources explicitly marked “Open Soil Library” (e.g., certain planting guides, water-harvesting templates) are shared under a <strong>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</strong>. You may adapt and redistribute those materials for non-commercial regenerative projects with proper attribution to Earthsong Arboria Studio.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- user obligations and community guidelines -->
+    <section>
+      <h2 class="section-title">4. Community Land Ethic — Your Responsibilities</h2>
+      <div class="text-block">As a visitor, client, or participant in Earthsong spaces (online forums, workshops, volunteer days), you agree to:</div>
+      <ul class="legal-list">
+        <li>Provide accurate, current, and complete information when registering for events or purchasing products.</li>
+        <li>Respect the ecological integrity of our demonstration sites: no harvesting without permission, no littering, and always follow Leave No Trace principles.</li>
+        <li>Not use our website or services to distribute harmful code, spam, offensive language, or content that violates any applicable laws.</li>
+        <li>Not impersonate any Earthsong team member or misrepresent affiliation with our studio.</li>
+        <li>Honor the “Seventh Generation Promise” in spirit: avoid promoting or implementing synthetic herbicides, neonicotinoids, or destruction of native habitats in projects associated with our guidance.</li>
+      </ul>
+      <div class="text-block">Violation of these guidelines may result in immediate suspension of access, cancellation of pending services, and, in severe cases, a ban from all Earthsong programs. We aim to cultivate a safe, supportive, and ecologically responsible community — always rooted in restoration.</div>
+    </section>
+
+    <!-- purchases, cancellations, refunds -->
+    <section>
+      <h2 class="section-title">5. Purchases, Subscriptions & Root Holder Program</h2>
+      <div class="legal-card">
+        <h3>💚 Product & Design Deposits</h3>
+        <div class="text-block">When you purchase plants, merchandise, or register for workshops via our online store, you agree to pay the listed price plus any applicable taxes or shipping fees. Payments are processed through secure third‑party gateways; we do not store full credit card details. All product prices are in USD unless otherwise noted.</div>
+        <h3>📆 Root Holder Membership</h3>
+        <div class="text-block">Our optional “Root Holder” community membership is billed monthly or annually, as selected at signup. You may cancel at any time via your account dashboard or by contacting our support team. Cancellations take effect at the end of the current billing cycle; no partial refunds for unused periods are provided, except where required by law. We reserve the right to adjust membership fees with 30 days’ notice sent via email.</div>
+        <h3>🔁 Returns & Refunds</h3>
+        <div class="text-block">Due to the perishable nature of live plants, we do not accept returns on nursery stock unless plants arrived damaged or unhealthy. Please report any plant issues within 48 hours of delivery with photo documentation. For digital products (e-books, course access), refunds are available within 14 days of purchase if less than 25% of the content has been accessed. For design services, cancellation fees may apply based on work already completed — details outlined in individual design agreements.</div>
+      </div>
+    </section>
+
+    <!-- liability disclaimer & soil wisdom clause -->
+    <section>
+      <h2 class="section-title">6. Disclaimer of Warranties & Limitation of Liability</h2>
+      <div class="text-block">Earthsong Arboria Studio provides educational, design, and horticultural guidance based on decades of experience and current ecological science, but <strong>we do not guarantee specific outcomes</strong> (e.g., plant survival rates, carbon sequestration numbers, or financial returns). Soil conditions, weather, local fauna, and maintenance practices vary widely. All information, tools, and recommendations are offered “as is” without warranty of any kind, either express or implied.</div>
+      <div class="text-block">To the fullest extent permitted by law, Earthsong Arboria Studio, its owners, employees, or affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of our website, services, products, or any information provided. This includes loss of crops, property damage, injury, or economic loss. You assume full responsibility for implementing any design or practice on your property. Our total liability, whether in contract, tort, or otherwise, shall not exceed the amount paid by you to us in the previous six months.</div>
+      <div class="legal-card" style="background:#F2ECDF;">
+        <h3>🌾 Note on DIY Ecology</h3>
+        <div class="text-block">Working with soil, tools, plants, and fungi involves inherent risks (e.g., slips, allergic reactions, cuts, contact with wildlife). Always use proper safety gear and consult local professionals for specific concerns. The Studio is not liable for injuries that occur during self‑led activities based on our free content.</div>
+      </div>
+    </section>
+
+    <!-- indemnification -->
+    <section>
+      <h2 class="section-title">7. Indemnification</h2>
+      <div class="text-block">You agree to indemnify, defend, and hold harmless Earthsong Arboria Studio, its directors, employees, and volunteers from any claims, damages, losses, liabilities, costs, or expenses (including reasonable legal fees) arising from: (a) your violation of these Terms; (b) your misuse of our website, products, or services; (c) your infringement of any third-party rights, including intellectual property; or (d) any activity conducted through your account. We reserve the right to assume exclusive defense of any matter otherwise subject to indemnification by you, in which case you agree to cooperate with our defense team.</div>
+    </section>
+
+    <!-- third party links, events, force majeure -->
+    <section>
+      <h2 class="section-title">8. External Links, Events & Force Majeure</h2>
+      <div class="text-block">Our website may link to third‑party websites, seed banks, or partner organizations. These links are provided for convenience only; we do not endorse or assume responsibility for the content, policies, or practices of any third‑party site. Additionally, Earthsong may host events at off‑site locations (parks, farms). Participants assume all risks associated with travel and attendance; waivers may be required prior to participation.</div>
+      <div class="text-block">We shall not be held liable for any delay or failure in performance resulting from causes beyond our reasonable control, including but not limited to natural disasters, wildfires, extreme weather, pandemics, governmental actions, or supply chain disruptions. In such events, we will make reasonable efforts to reschedule workshops or fulfill outstanding orders as conditions permit.</div>
+    </section>
+
+    <!-- termination and governing law -->
+    <section style="border-bottom: none;">
+      <h2 class="section-title">9. Termination & Governing Law</h2>
+      <div class="row-2col" style="margin: 1rem 0;">
+        <div class="col">
+          <div class="text-block"><strong>Termination:</strong> We may suspend or terminate your access to any Earthsong service or website immediately, without prior notice or liability, for any reason, including breach of these Terms. Upon termination, your right to use the site ceases immediately, but provisions that by their nature should survive (e.g., intellectual property, liability limits, indemnification) will remain in effect.</div>
+        </div>
+        <div class="col">
+          <div class="text-block"><strong>Jurisdiction:</strong> These Terms shall be governed by and construed in accordance with the laws of the State of Vermont, United States, without regard to its conflict of law provisions. Any legal action or proceeding arising under these Terms shall be brought exclusively in the state or federal courts located in Windham County, Vermont, and you irrevocably consent to such jurisdiction.</div>
+        </div>
+      </div>
+      <div class="legal-card" style="background: #E9E0D0; margin-top: 0.5rem;">
+        <h3>📜 Mediation Before Litigation</h3>
+        <div class="text-block">As an earth-centered studio, we encourage resolution through dialogue. Prior to filing any claim, you agree to engage in good‑faith mediation with a mutually agreed mediator for at least 30 days. Only if mediation fails may formal legal proceedings commence. This clause aims to restore relationships before resorting to courts.</div>
+      </div>
+    </section>
+
+    <!-- additional notes & contact -->
+    <section style="padding: 1rem 0 3rem 0; border-bottom: none;">
+      <h2 class="section-title">Questions & Rooted Correspondence</h2>
+      <div class="text-block">If you have any questions about these Terms, wish to report a violation, or request permission for use of copyrighted material, please reach out to our legal & ethics team:</div>
+      <div style="background: #F4EFE4; border-radius: 32px; padding: 1.5rem; margin: 1.2rem 0; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
+        <div><strong>🌿 Email:</strong> <a href="mailto:legal@earthsongarboria.com">legal@earthsongarboria.com</a></div>
+        <div><strong>📬 Mail:</strong> Earthsong Arboria Studio, Attn: Legal, 1257 Arbor Vitae Lane, Hawkmeadow Valley, VT 05774</div>
+        <div><strong>📞 Phone:</strong> +1 (802) 318-9642 (Mon–Thu, 10am–4pm ET)</div>
+      </div>
+      <div class="text-block">By using our website, purchasing a workshop ticket, or joining a community event after the effective date, you signal your informed consent to these Terms. We thank you for walking the brown‑green path with integrity, patience, and curiosity.</div>
+      <div class="text-block" style="margin-top: 1rem; font-size: 0.85rem; border-left: 4px solid var(--brown-light); padding-left: 1rem;"><strong>Last Amended:</strong> March 15, 2026. Version 2.3 — aligned with the Seventh Generation Promise.</div>
+      <div style="margin-top: 2rem; text-align: center;">
+        <a href="contact.html" class="btn">📬 Share a question with our Grove Keeper</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <h4 style="font-family: 'Playfair Display'; color: #D6C29D;">Earthsong Arboria Studio</h4>
+      <p style="margin-top: 0.75rem;">Where brown soil sings with green wings.</p>
+    </div>
+    <div class="footer-col">
+      <address>
+        <strong>📍 Studio & Nursery</strong><br>
+        1257 Arbor Vitae Lane,<br>
+        Hawkmeadow Valley, VT 05774<br>
+        United States
+      </address>
+    </div>
+    <div class="footer-col">
+      <p><strong>📞 Call & Cultivate</strong><br>
+      +1 (802) 318-9642<br>
+      <a href="mailto:hello@earthsongarboria.com">hello@earthsongarboria.com</a></p>
+    </div>
+  </div>
+  <div class="container copyright">
+    <p>© 2026 Earthsong Arboria Studio — Regenerative Gardens for the Seventh Generation. All images captured from our living collections. Brown & Green, forever.</p>
+  </div>
+</footer>
+</body>
+</html>

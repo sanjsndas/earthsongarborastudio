@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Connect with Earthsong Arboria Studio – our regenerative garden designers, nursery team, and soil stewards. Visit our valley nursery, schedule a consultation, or send us a message.">
+  <title>Earthsong Arboria Studio | Contact — Cultivate Connection</title>
+  <!-- Preconnect & Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #FDF8EC;
+      font-family: 'Inter', sans-serif;
+      color: #2C2B26;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --brown-deep: #5E3A1C;
+      --brown-mid: #8B5A2B;
+      --brown-light: #C49A6C;
+      --green-forest: #1F4F2B;
+      --green-sage: #5F7A4B;
+      --green-moss: #7E9A6B;
+      --cream: #F9F1E0;
+      --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);
+    }
+
+    h1, h2, h3, .logo, .nav-links a {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* header & nav (mirror main site) */
+    header {
+      background: #2C3A1F;
+      border-bottom: 4px solid var(--brown-deep);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #EFE3C9;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: var(--brown-light);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #F1E9D8;
+      font-weight: 500;
+      transition: 0.2s;
+      font-size: 1.05rem;
+    }
+    .nav-links a:hover {
+      color: var(--brown-light);
+    }
+
+    /* page hero (contact specific) */
+    .page-hero {
+      background: linear-gradient(110deg, #2A3E25 0%, #3B5C33 100%);
+      padding: 3rem 0 2.8rem;
+      color: #FFF4E4;
+      text-align: center;
+    }
+    .page-hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 0.75rem;
+    }
+    .page-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* two column layout (contact form + details) */
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      margin: 3rem 0 2rem;
+    }
+    .contact-form-col {
+      flex: 1.2;
+      background: #FFFCF5;
+      border-radius: 32px;
+      padding: 2rem 2rem 2.2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(139,90,43,0.15);
+    }
+    .contact-details-col {
+      flex: 0.9;
+      background: #FEF9EF;
+      border-radius: 32px;
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #EADBBF;
+    }
+
+    .section-title-sm {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--green-forest);
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+      border-left: 4px solid var(--brown-mid);
+      padding-left: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #3E3A34;
+      font-size: 0.9rem;
+      letter-spacing: 0.3px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1px solid #DFD4BF;
+      border-radius: 28px;
+      background: white;
+      font-family: 'Inter', sans-serif;
+      transition: 0.2s;
+      outline: none;
+      font-size: 1rem;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--brown-mid);
+      box-shadow: 0 0 0 3px rgba(139,90,43,0.2);
+    }
+    .btn-submit {
+      background: var(--green-forest);
+      color: white;
+      border: none;
+      padding: 0.85rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+      font-size: 1rem;
+      width: 100%;
+      font-family: 'Inter', sans-serif;
+      margin-top: 0.5rem;
+    }
+    .btn-submit:hover {
+      background: var(--brown-deep);
+      transform: translateY(-2px);
+    }
+
+    .info-block {
+      margin: 2rem 0;
+    }
+    .info-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      margin-bottom: 1.8rem;
+    }
+    .info-icon {
+      font-size: 1.8rem;
+      min-width: 2.2rem;
+    }
+    .info-text h4 {
+      font-family: 'Playfair Display', serif;
+      color: var(--brown-deep);
+      margin-bottom: 0.3rem;
+    }
+    .info-text p, .info-text address {
+      font-style: normal;
+      line-height: 1.5;
+      color: #4A453C;
+    }
+    .info-text a {
+      color: var(--green-forest);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .info-text a:hover {
+      text-decoration: underline;
+    }
+
+    .nursery-hours {
+      background: #EBDECB;
+      border-radius: 28px;
+      padding: 1.2rem;
+      margin: 1.5rem 0;
+    }
+    .nursery-hours h4 {
+      color: var(--brown-deep);
+      margin-bottom: 0.8rem;
+    }
+    .nursery-hours p {
+      margin: 0.4rem 0;
+    }
+
+    /* map placeholder - charming brown-green aesthetic */
+    .map-embrace {
+      margin-top: 2rem;
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      background: #DBCEAF;
+      text-align: center;
+      padding: 1.5rem 0.5rem;
+      border: 1px solid #CBB786;
+    }
+    .map-placeholder-text {
+      font-size: 0.9rem;
+      color: #2C2B26;
+      font-weight: 500;
+    }
+    .map-embrace svg {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    /* additional section: reach out */
+    .extra-connect {
+      background: #F7F0E2;
+      border-radius: 40px;
+      padding: 2rem;
+      margin: 2rem 0 3rem;
+      text-align: center;
+    }
+    .extra-connect h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--green-forest);
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.2rem;
+    }
+    .social-links a {
+      text-decoration: none;
+      color: var(--brown-mid);
+      font-weight: 500;
+      border-bottom: 1px dashed var(--brown-light);
+    }
+
+    footer {
+      background: #25221C;
+      color: #D9CDB0;
+      padding: 2.5rem 0;
+      margin-top: 1rem;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: baseline;
+    }
+    .footer-col p, .footer-col address {
+      line-height: 1.6;
+      font-style: normal;
+    }
+    .footer-col a {
+      color: #C9B27C;
+      text-decoration: none;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      border-top: 1px solid #3E3A33;
+      padding-top: 1.5rem;
+    }
+    @media (max-width: 760px) {
+      .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .container {
+        padding: 0 1.2rem;
+      }
+      .page-hero h1 {
+        font-size: 2rem;
+      }
+      .contact-grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="logo">Earthsong <span>Arboria Studio</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <h1>Reach the Root of Connection</h1>
+      <p>Whether you dream of an edible forest, need soil consultation, or simply wish to visit our living nursery — we welcome you with open hands and muddy boots.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- two column core contact section -->
+    <div class="contact-grid">
+      <!-- left: contact form -->
+      <div class="contact-form-col">
+        <h2 class="section-title-sm">Send us a letter — the old way, but digital</h2>
+        <p style="margin-bottom: 1.5rem; color:#5C5548;">Every message is answered by a real human gardener. Tell us about your piece of earth.</p>
+        <form action="#" method="POST" id="contactForm">
+          <div class="form-group">
+            <label for="name">Full name *</label>
+            <input type="text" id="name" name="name" required placeholder="e.g., Willow Meadow">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" required placeholder="hello@earthsong.com">
+          </div>
+          <div class="form-group">
+            <label for="interest">I’m interested in...</label>
+            <select id="interest" name="interest">
+              <option value="design">🌱 Garden design & consultation</option>
+              <option value="nursery">🌿 Nursery / plant shopping</option>
+              <option value="workshop">📚 Workshop or field day</option>
+              <option value="press">📰 Press / collaboration</option>
+              <option value="other">🍂 Other (tell us more)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your message (soil stories, questions, dreams) *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Describe your land, vision, or what you'd like to grow..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">🌼 Send & Cultivate 🌼</button>
+          <p style="font-size: 0.75rem; margin-top: 1rem; color:#8F7A60;">We respect your peace — no spam, only seasonal notes.</p>
+        </form>
+        <div id="formFeedback" style="margin-top: 1rem; font-weight: 500;"></div>
+      </div>
+
+      <!-- right: studio details, address, phone, nursery hours -->
+      <div class="contact-details-col">
+        <div class="info-block">
+          <div class="info-item">
+            <div class="info-icon">🌱</div>
+            <div class="info-text">
+              <h4>Studio & Nursery Ground</h4>
+              <address>1257 Arbor Vitae Lane,<br>Hawkmeadow Valley, VT 05774<br>United States</address>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div class="info-text">
+              <h4>Speak with a steward</h4>
+              <p><a href="tel:+18023189642">+1 (802) 318-9642</a><br> (weekdays 9am–5pm ET)</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div class="info-text">
+              <h4>Deep soil correspondence</h4>
+              <p><a href="mailto:hello@earthsongarboria.com">hello@earthsongarboria.com</a><br>We reply within 2–3 sun cycles.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="nursery-hours">
+          <h4>🌳 Nursery & Open Garden Hours</h4>
+          <p><strong>Wednesday – Saturday:</strong> 10am – 5pm<br>
+          <strong>Sunday:</strong> 11am – 4pm (herb walks at 2pm)<br>
+          <strong>Monday/Tuesday:</strong> closed for soil dreaming & mycelium work<br>
+          🌸 Last entry 30 minutes before closing. Come touch the leaves.</p>
+          <p style="margin-top:0.5rem; font-size:0.85rem;">✨ Seasonal plant markets: first weekend of May & September.</p>
+        </div>
+
+        <!-- Map / artistic representation of location -->
+        <div class="map-embrace">
+          <svg width="100%" height="130" viewBox="0 0 400 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#EBDBC2; border-radius: 20px;">
+            <path d="M40,60 L100,30 L180,50 L250,25 L340,55 L370,75 L280,85 L210,70 L140,80 L70,70 L40,60Z" fill="#6C8B4A" stroke="#5E3A1C" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="190" cy="55" r="12" fill="#C49A6C" stroke="#5E3A1C" stroke-width="1.5"/>
+            <text x="165" y="88" fill="#2C2B26" font-size="8" font-family="Inter">Earthsong Nursery</text>
+            <path d="M260 48 L280 38 L300 48 L280 58 Z" fill="#8B5A2B" opacity="0.8"/>
+            <rect x="70" y="55" width="14" height="14" fill="#5E3A1C" rx="2" />
+          </svg>
+          <div class="map-placeholder-text">🌲 Hawkmeadow Valley — nestled between ancient oak woods & blueberry hills. Look for the woven willow arch.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- extra unique content with more earthy storytelling -->
+    <div class="extra-connect">
+      <h3>🌿 Before you write, wander with us...</h3>
+      <p style="max-width: 800px; margin: 0.8rem auto;">The best conversations start with walking barefoot on our nursery paths. We host monthly “Brown & Green Open Soil Hours” — no appointment needed, just curiosity. Bring a jar of your own garden dirt and we’ll read its story. Also, our digital newsletter, "The Rhizosphere", shares deep seasonal guidance. Let us know if you'd like to receive woodland whispers.</p>
+      <div class="social-links">
+        <a href="#">📸 Instagram: @earthsong_arboria</a>
+        <a href="#">🌱 Substack: Soil & Soul</a>
+        <a href="#">🎧 Podcast: Beneath the Canopy</a>
+      </div>
+      <p style="margin-top: 1rem; font-size: 0.9rem;">✨ Need urgent garden triage? Call our hotline between 10am–2pm ET.</p>
+    </div>
+
+    <!-- Additional helpful section: FAQ & directions -->
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 2rem 0 2.5rem;">
+      <div style="flex:1; background: #FFFBF2; border-radius: 28px; padding: 1.5rem;">
+        <h3 style="color: #5E3A1C; font-family: 'Playfair Display';">🚗 Directions from nearby</h3>
+        <p style="margin-top: 0.5rem;">From Hawkmeadow centre, follow Arbor Road east for 2.3 miles until you see the moss-covered stone sign. Turn onto the gravel lane lined with hazelnut hedges. Ample parking near the greenhouse. Public bus #12 stops at the valley turn, and we offer a bike rack made from reclaimed locust wood.</p>
+      </div>
+      <div style="flex:1; background: #FFFBF2; border-radius: 28px; padding: 1.5rem;">
+        <h3 style="color: #5E3A1C; font-family: 'Playfair Display';">🌾 Studio Apprenticeships</h3>
+        <p>We accept two seasonal interns each spring — hands-on education in permaculture, soil microscopy, and plant propagation. Send a short letter of interest and your relationship with the land to <strong>learn@earthsongarboria.com</strong>. Brown hands and green hearts welcome.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer id="contact-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <h4 style="font-family: 'Playfair Display'; color: #D6C29D;">Earthsong Arboria Studio</h4>
+      <p style="margin-top: 0.75rem;">Where brown soil sings with green wings.</p>
+    </div>
+    <div class="footer-col">
+      <address>
+        <strong>📍 Studio & Nursery</strong><br>
+        1257 Arbor Vitae Lane,<br>
+        Hawkmeadow Valley, VT 05774<br>
+        United States
+      </address>
+    </div>
+    <div class="footer-col">
+      <p><strong>📞 Call & Cultivate</strong><br>
+      +1 (802) 318-9642<br>
+      <a href="mailto:hello@earthsongarboria.com">hello@earthsongarboria.com</a></p>
+    </div>
+  </div>
+  <div class="container copyright">
+    <p>© 2026 Earthsong Arboria Studio — Regenerative Gardens for the Seventh Generation. Every conversation plants a seed.</p>
+  </div>
+</footer>
+
+<!-- simple client-side form feedback (demo, does not actually submit to server) -->
+<script>
+  (function() {
+    const form = document.getElementById('contactForm');
+    const feedbackDiv = document.getElementById('formFeedback');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name')?.value.trim();
+        const email = document.getElementById('email')?.value.trim();
+        const msg = document.getElementById('message')?.value.trim();
+        if (!name || !email || !msg) {
+          feedbackDiv.innerHTML = '<span style="color:#A3491B;">❄️ Please fill all required fields (name, email, message). The soil needs full attention.</span>';
+          return;
+        }
+        if (!email.includes('@') || !email.includes('.')) {
+          feedbackDiv.innerHTML = '<span style="color:#A3491B;">🌿 That doesn’t look like a living email address — please double-check.</span>';
+          return;
+        }
+        feedbackDiv.innerHTML = '<span style="color:#2C6E2F;">✨ Thank you, ' + escapeHtml(name) + '! Your message has been carried by the wind to our studio. We’ll reply within 48 hours. Meanwhile, observe the earth beneath your feet. 🌱</span>';
+        form.reset();
+        setTimeout(() => {
+          if(feedbackDiv) feedbackDiv.innerHTML = '';
+        }, 6000);
+      });
+    }
+    function escapeHtml(str) {
+      if(!str) return '';
+      return str.replace(/[&<>]/g, function(m) {
+        if(m === '&') return '&amp;';
+        if(m === '<') return '&lt;';
+        if(m === '>') return '&gt;';
+        return m;
+      });
+    }
+  })();
+</script>
+</body>
+</html>

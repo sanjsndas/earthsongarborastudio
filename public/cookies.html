@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Earthsong Arboria Studio Cookies Policy — our transparent and minimal use of digital seeds (cookies) to respect your privacy while you explore regenerative gardening.">
+  <title>Earthsong Arboria Studio | Cookies Policy — Digital Seeds with Care</title>
+  <!-- Preconnect & Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #FDF8EC;
+      font-family: 'Inter', sans-serif;
+      color: #2C2B26;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --brown-deep: #5E3A1C;
+      --brown-mid: #8B5A2B;
+      --brown-light: #C49A6C;
+      --green-forest: #1F4F2B;
+      --green-sage: #5F7A4B;
+      --green-moss: #7E9A6B;
+      --cream: #F9F1E0;
+      --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);
+    }
+
+    h1, h2, h3, .logo, .nav-links a {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* header & nav */
+    header {
+      background: #2C3A1F;
+      border-bottom: 4px solid var(--brown-deep);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #EFE3C9;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: var(--brown-light);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #F1E9D8;
+      font-weight: 500;
+      transition: 0.2s;
+      font-size: 1.05rem;
+    }
+    .nav-links a:hover {
+      color: var(--brown-light);
+    }
+
+    /* legal hero */
+    .legal-hero {
+      background: linear-gradient(115deg, #23381E 0%, #365A2E 100%);
+      padding: 2.5rem 0 2rem;
+      color: #FFF4E4;
+      text-align: center;
+    }
+    .legal-hero h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 0.5rem;
+    }
+    .legal-hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .last-updated {
+      background: rgba(0,0,0,0.25);
+      display: inline-block;
+      padding: 0.2rem 1rem;
+      border-radius: 60px;
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      backdrop-filter: blur(2px);
+    }
+
+    /* main card & content */
+    .privacy-card {
+      background: #FFFCF5;
+      border-radius: 40px;
+      margin: 2.5rem 0 3rem;
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(139,90,43,0.2);
+    }
+    .privacy-section {
+      margin-bottom: 2.5rem;
+    }
+    .privacy-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      color: var(--green-forest);
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--brown-mid);
+      padding-left: 1rem;
+    }
+    .privacy-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--brown-deep);
+      margin: 1.2rem 0 0.6rem;
+    }
+    .privacy-section p, .privacy-section li {
+      line-height: 1.6;
+      color: #3E3A34;
+      margin-bottom: 0.8rem;
+    }
+    .privacy-section ul, .privacy-section ol {
+      margin-left: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .privacy-section a {
+      color: var(--green-forest);
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .privacy-section a:hover {
+      color: var(--brown-deep);
+    }
+    .inset-note {
+      background: #F2EAD9;
+      padding: 1.2rem;
+      border-radius: 28px;
+      margin: 1.5rem 0;
+      border-left: 6px solid var(--brown-mid);
+      font-style: italic;
+    }
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.2rem 0;
+      background: #FEF8EF;
+      border-radius: 20px;
+      overflow: hidden;
+      font-size: 0.95rem;
+    }
+    .cookie-table th, .cookie-table td {
+      border: 1px solid #E3D5BF;
+      padding: 0.85rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    .cookie-table th {
+      background: #EADBBF;
+      color: #2C2B26;
+      font-weight: 600;
+    }
+    .btn-back {
+      display: inline-block;
+      background: var(--green-sage);
+      color: white;
+      padding: 0.6rem 1.4rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      transition: 0.2s;
+    }
+    .btn-back:hover {
+      background: var(--brown-deep);
+    }
+    .cookie-preferences {
+      background: #EBE2D1;
+      border-radius: 32px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    .pref-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+    .pref-btn {
+      background: white;
+      border: 1px solid var(--brown-mid);
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      transition: 0.2s;
+      background: #FEF6EA;
+    }
+    .pref-btn:hover {
+      background: var(--brown-light);
+      color: white;
+      border-color: var(--brown-deep);
+    }
+    @media (max-width: 760px) {
+      .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .container {
+        padding: 0 1.2rem;
+      }
+      .legal-hero h1 {
+        font-size: 2rem;
+      }
+      .privacy-card {
+        padding: 1.5rem;
+      }
+      .cookie-table th, .cookie-table td {
+        padding: 0.5rem;
+      }
+    }
+    footer {
+      background: #25221C;
+      color: #D9CDB0;
+      padding: 2.5rem 0;
+      margin-top: 1rem;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: baseline;
+    }
+    .footer-col p, .footer-col address {
+      line-height: 1.6;
+      font-style: normal;
+    }
+    .footer-col a {
+      color: #C9B27C;
+      text-decoration: none;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      border-top: 1px solid #3E3A33;
+      padding-top: 1.5rem;
+    }
+    .badge-small {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #E6DCCF;
+      border-radius: 60px;
+      padding: 0.2rem 0.8rem;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="logo">Earthsong <span>Arboria Studio</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="legal-hero">
+    <div class="container">
+      <h1>🍪 Cookies Policy — Digital Seeds & Consent</h1>
+      <p>We use only the lightest sprinkling of cookies — like dusting compost over a bed — never for surveillance, only for harmony and essential function.</p>
+      <div class="last-updated">🌾 Last updated: May 16, 2026 | Version 2.0 — Minimal & Mindful</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="privacy-card">
+      <!-- gentle introduction -->
+      <div class="privacy-section">
+        <p><strong>Just as a garden grows best with minimal intervention, our website thrives on trust.</strong> At Earthsong Arboria Studio, we respect your autonomy. This Cookies Policy explains what cookies are, which ones we deploy (very few), and how you can manage them. We never use tracking cookies for advertising or cross-site profiling. Your visit here is like a quiet walk through the nursery — unobserved and unhurried.</p>
+        <div class="inset-note">
+          🍃 <strong>Our core promise:</strong> No creepy trackers, no analytics that follow you across the web. All cookies we use are either strictly necessary or functional, such as remembering if you’ve dismissed a notification. You are always in control.
+        </div>
+      </div>
+
+      <!-- section 1: what are cookies? -->
+      <div class="privacy-section">
+        <h2>🌿 1. What are cookies? (tiny seed data)</h2>
+        <p>Cookies are small text files placed on your device (computer, phone, tablet) when you visit a website. They help the website remember your actions and preferences (like language, display settings, or login status) over a period of time, so you don’t have to re-enter them each time. Think of them as little biodegradable markers — but unlike most sites, ours are very shy and respect your boundaries.</p>
+      </div>
+
+      <!-- section 2: cookies we use — full transparency table -->
+      <div class="privacy-section">
+        <h2>📋 2. Our cookie catalog — transparent as creek water</h2>
+        <p>We use <strong>only essential and functional cookies</strong>. None are used for marketing, behavioral profiling, or selling data. Below is the complete list of cookies you may encounter on our domain:</p>
+        <table class="cookie-table">
+          <thead>
+            <tr><th>Cookie Name</th><th>Purpose</th><th>Duration</th><th>Type</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>session_prefs</code></td>
+              <td>Stores temporary UI preferences (e.g., whether you expanded a workshop FAQ section). Helps streamline your navigation during a single visit.</td>
+              <td>Session (deleted when browser closes)</td>
+              <td>Essential</td>
+            </tr>
+            <tr>
+              <td><code>cookie_consent</code></td>
+              <td>Remembers your cookie preference (so we don't ask you again after you’ve accepted or declined non-essential cookies — though we have no non-essential ones). Strictly for legal harmony.</td>
+              <td>6 months</td>
+              <td>Functional / Compliance</td>
+            </tr>
+            <tr>
+              <td><code>gardener_reminder</code></td>
+              <td>Optional: if you choose to “remind me later” about our seasonal plant sale, a lightweight, non‑tracking preference cookie is set. No personal data linked.</td>
+              <td>30 days</td>
+              <td>Functional (opt‑in only)</td>
+            </tr>
+            <tr>
+              <td><code>last_visit_info</code></td>
+              <td>Anonymized flag that shows if you’re a returning visitor (no IP, no timestamps details; just a binary ‘seen’ flag). Used only to tailor a tiny welcome message, not for analytics.</td>
+              <td>1 year</td>
+              <td>Functional, non‑tracking</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>We do not use any third-party advertising cookies, Facebook pixels, Google Analytics (we use a privacy‑respecting, self-hosted alternative that collects zero personal data). No external tracking of any kind.</p>
+      </div>
+
+      <!-- section 3: how you can manage cookies -->
+      <div class="privacy-section">
+        <h2>⚙️ 3. Your cookie stewardship (manage & revoke)</h2>
+        <p>You can manage your cookie preferences at any time. Most browsers allow you to block or delete cookies altogether. However, blocking essential cookies may affect the functionality of some parts of our website (for instance, the cookie consent banner might appear repeatedly). But don’t worry — our core content and forms will still work.</p>
+        <div class="cookie-preferences">
+          <p>🍪 <strong>Manage your cookie preferences right here</strong> — this panel allows you to opt in/out of functional cookies that are not strictly essential (currently only the optional "gardener_reminder" cookie). Essential cookies cannot be disabled because they ensure basic site operations.</p>
+          <div class="pref-buttons">
+            <button id="acceptOptionalBtn" class="pref-btn">🌱 Accept optional cookies</button>
+            <button id="declineOptionalBtn" class="pref-btn">🍂 Decline optional cookies (only essentials)</button>
+            <button id="clearAllCookiesBtn" class="pref-btn">🗑️ Clear all Earthsong cookies (reset preferences)</button>
+          </div>
+          <p id="cookieFeedback" style="font-size: 0.85rem; margin-top: 1rem; color: #4A5B36;"></p>
+        </div>
+        <p>Additionally, you can configure your web browser (Chrome, Firefox, Safari, Edge) to block all cookies or notify you when a cookie is set. Please consult your browser's help section for detailed instructions.</p>
+      </div>
+
+      <!-- section 4: Third-party & external resources -->
+      <div class="privacy-section">
+        <h2>🔗 4. External embeds & resources (very minimal)</h2>
+        <p>Our site may occasionally embed content from Vimeo (for workshop recordings) or Calendly (for appointment booking). These third parties may set their own cookies, but only when you actively interact with the embedded widget (e.g., pressing 'play' on a video or loading a scheduling widget). We do not load any external scripts by default unless you give explicit interaction. However, we recommend reviewing their respective privacy policies: Vimeo's cookie policy and Calendly's cookie policy.</p>
+        <div class="inset-note">
+          🌸 <strong>Our commitment:</strong> We choose embedded tools that prioritize data minimization. No external fonts from Google (we self-host) and no social media share buttons that track you. Our digital footprint is as light as a hummingbird’s.
+        </div>
+      </div>
+
+      <!-- section 5: Analytics? Yes, but privacy-first -->
+      <div class="privacy-section">
+        <h2>📊 5. Privacy-first analytics (no personal data)</h2>
+        <p>We care about understanding which of our articles on native plants or soil regeneration are most helpful. However, we <strong>do not use Google Analytics</strong> or any invasive tracking. Instead we use a minimal, self-hosted analytics tool (Plausible / Fathom-like approach) that aggregates only basic counts: page views, referrer domains (e.g., “from a search engine”), and rough region (country level). No IP addresses are stored, no user‑specific identifiers, no cross-site tracking. You can learn more about our commitment to digital sovereignty on our <a href="privacy.html">Privacy Policy page</a>.</p>
+        <p>Because these analytics do not involve any personal data or unique identifiers, they do not require cookie consent under GDPR/CCPA — but we tell you anyway because transparency is our root value.</p>
+      </div>
+
+      <!-- section 6: Consent & Legal basis -->
+      <div class="privacy-section">
+        <h2>📜 6. Your consent & legal harmony</h2>
+        <p>When you first visit our website, we display a minimal cookie banner informing you about our cookie use. By continuing to use our site or by clicking “Accept” on the banner, you consent to our use of functional and essential cookies as described. You may withdraw your consent at any time by adjusting the preference panel above or clearing cookies via your browser. Our legal basis for essential cookies is legitimate interest (website function), while for optional functional cookies, we rely on your explicit consent.</p>
+        <p>If you are located in the European Economic Area, the UK, or California, you have specific rights concerning automated decision-making and data portability — none of which we perform. Still, our policy aligns with GDPR, ePrivacy Directive, and CCPA standards.</p>
+      </div>
+
+      <!-- section 7: Children & cookie usage -->
+      <div class="privacy-section">
+        <h2>🧒 7. Children’s privacy & cookies</h2>
+        <p>Our site does not target children under 13, and we do not knowingly collect personal information from them. The minimal cookies we set are not used to build profiles or track behavior across sessions. If you are a parent or guardian and have concerns about cookie storage regarding a minor, please use the browser tools to delete cookies or contact us.</p>
+      </div>
+
+      <!-- section 8: Updates to this policy -->
+      <div class="privacy-section">
+        <h2>🍂 8. Growing with transparency: policy updates</h2>
+        <p>We may update this Cookies Policy occasionally to reflect changes in our practices or for legal compliance. Any material changes will be notified via our website notice or email (if we have your address). The “last updated” date at the top indicates the latest revision. By continuing to use our site after any modifications, you accept the revised policy. We encourage you to review it periodically — just as you would check your compost heap for health.</p>
+      </div>
+
+      <!-- section 9: Contact us about cookies -->
+      <div class="privacy-section">
+        <h2>✉️ 9. Questions? Talk to the Digital Steward</h2>
+        <p>If you have any questions about our use of cookies, your preferences, or if you’d like to request a copy of the data stored in any cookie (though we store no personal data there), please reach out — we're happy to help.</p>
+        <div style="background: #F3ECDE; border-radius: 24px; padding: 1rem 1.5rem; margin-top: 1rem;">
+          <p><strong>🌳 Earthsong Arboria Studio — Digital Stewardship</strong><br>
+          1257 Arbor Vitae Lane, Hawkmeadow Valley, VT 05774, United States<br>
+          Email: <a href="mailto:privacy@earthsongarboria.com">privacy@earthsongarboria.com</a><br>
+          Phone: <a href="tel:+18023189642">+1 (802) 318-9642</a> (ask for the Digital Steward)</p>
+          <p>For complaints regarding cookies or tracking, you may contact the Vermont Attorney General’s Consumer Assistance Program or your local data protection authority.</p>
+        </div>
+      </div>
+
+      <!-- final reassurance signature -->
+      <div class="inset-note" style="background:#E6DCCF;">
+        🌻 <strong>Digital ecology note:</strong> Every cookie we set is a conscious choice. We don’t believe in monetizing your clicks. Instead, we invest in soil, seeds, and community. Your trust is the richest harvest we cultivate.
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="index.html" class="btn-back">🏡 Return to Earthsong Grove</a>
+        <a href="privacy.html" class="btn-back" style="background: #8B5A2B; margin-left: 0.8rem;">📖 Read Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <h4 style="font-family: 'Playfair Display'; color: #D6C29D;">Earthsong Arboria Studio</h4>
+      <p style="margin-top: 0.75rem;">Where soil wisdom meets digital gentleness.</p>
+    </div>
+    <div class="footer-col">
+      <address>
+        <strong>📍 Studio & Nursery</strong><br>
+        1257 Arbor Vitae Lane,<br>
+        Hawkmeadow Valley, VT 05774<br>
+        United States
+      </address>
+    </div>
+    <div class="footer-col">
+      <p><strong>📞 Call & Cultivate</strong><br>
+      +1 (802) 318-9642<br>
+      <a href="mailto:hello@earthsongarboria.com">hello@earthsongarboria.com</a></p>
+    </div>
+  </div>
+  <div class="container copyright">
+    <p>© 2026 Earthsong Arboria Studio — Rooted in reciprocity. Our cookies are as minimal as a morning dew.</p>
+  </div>
+</footer>
+
+<script>
+  // Simple cookie utility functions
+  function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+      const date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax; Secure";
+  }
+
+  function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for(let i=0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function eraseCookie(name) {
+    document.cookie = name + '=; Max-Age=-99999999; path=/; SameSite=Lax; Secure';
+  }
+
+  // Optional cookie: gardener_reminder. By default, we don't set it unless user accepts 'optional' category.
+  // The preference 'optionalConsent' stored in cookie_consent_state for our panel logic.
+  function setOptionalConsent(consentGiven) {
+    if (consentGiven) {
+      // just ensure the gardener_reminder cookie is not present; we only set if a user later chooses to enable a reminder, but for policy demo, we simulate that optional category is allowed.
+      // But we also store a meta flag that optional cookies are allowed. For real scenario we could set gardener_reminder only if needed.
+      setCookie("optional_cookies_consent", "true", 180);
+      document.getElementById("cookieFeedback").innerHTML = "🌿 Optional cookies enabled: functional (non-essential) cookies are now permitted. We won't set extra tracking, but preference cookies like reminders can now be stored. Thank you for trusting us!";
+    } else {
+      eraseCookie("optional_cookies_consent");
+      // delete any optional cookie that may have been set (gardener_reminder etc.)
+      eraseCookie("gardener_reminder");
+      document.getElementById("cookieFeedback").innerHTML = "🍂 Optional cookies disabled. Only essential cookies (session_prefs, cookie_consent) will function. Your privacy is respected.";
+    }
+  }
+
+  function clearAllSiteCookies() {
+    // delete known cookies: session_prefs, cookie_consent, gardener_reminder, optional_cookies_consent, last_visit_info
+    eraseCookie("session_prefs");
+    eraseCookie("cookie_consent");
+    eraseCookie("gardener_reminder");
+    eraseCookie("optional_cookies_consent");
+    eraseCookie("last_visit_info");
+    // also reset the cookie consent banner flag for demo consistency
+    document.getElementById("cookieFeedback").innerHTML = "✨ All Earthsong cookies cleared. Refresh the page to reset preferences. Essential cookies may re-appear as needed for basic function.";
+  }
+
+  // helper to set initial feedback on load
+  window.addEventListener('DOMContentLoaded', () => {
+    const optionalFlag = getCookie("optional_cookies_consent");
+    if (optionalFlag === "true") {
+      document.getElementById("cookieFeedback").innerHTML = "Current status: ✔️ Optional cookies enabled (functional non-essentials). You can change your mind anytime using the buttons above.";
+    } else {
+      document.getElementById("cookieFeedback").innerHTML = "Current status: 🌱 Only essential cookies are active. No optional trackers or reminders.";
+    }
+    // Also ensure cookie_consent is present for user preference (legal)
+    if (!getCookie("cookie_consent")) {
+      setCookie("cookie_consent", "acknowledged", 180);
+    }
+  });
+
+  // Button event listeners
+  document.getElementById("acceptOptionalBtn").addEventListener("click", () => {
+    setOptionalConsent(true);
+  });
+  document.getElementById("declineOptionalBtn").addEventListener("click", () => {
+    setOptionalConsent(false);
+  });
+  document.getElementById("clearAllCookiesBtn").addEventListener("click", () => {
+    clearAllSiteCookies();
+  });
+</script>
+</body>
+</html>
